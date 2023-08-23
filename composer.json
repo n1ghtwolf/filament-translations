@@ -24,9 +24,9 @@
     "minimum-stability": "dev",
     "require": {
         "php": "^8.1",
-        "filament/filament": "^3.0",
-        "filament/notifications": "^2.16",
-        "spatie/laravel-translation-loader": "^2.7",
+        "filament/filament": "^2.16|^3.0",
+        "filament/notifications": "*",
+        "spatie/laravel-translation-loader": "*",
         "spatie/laravel-package-tools": "^1.10"
     },
     "config": {
