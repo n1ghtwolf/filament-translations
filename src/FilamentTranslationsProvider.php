@@ -4,19 +4,21 @@ namespace io3x1\FilamentTranslations;
 
 use Filament\Navigation\UserMenuItem;
 use Illuminate\Support\ServiceProvider;
-use Filament\PluginServiceProvider;
 use io3x1\FilamentTranslations\Resources\TranslationResource;
 use Filament\Navigation\NavigationItem;
 use Filament\Facades\Filament;
 use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 
-class FilamentTranslationsProvider extends PluginServiceProvider
+class FilamentTranslationsProvider extends PackageServiceProvider
 {
+
+    public static string $name = 'filament-translations';
 
     public function configurePackage(Package $package): void
     {
-        $package->name('filament-translations');
+        $package->name(static::$name);
     }
 
     protected array $resources = [
